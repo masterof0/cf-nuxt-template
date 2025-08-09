@@ -8,7 +8,14 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  imports: {
+    dirs: ["shared/types/**/*.ts"],
+  },
+
   nitro: {
+    imports: {
+      dirs: ["shared/types/**/*.ts"],
+    },
     preset: "cloudflare_module",
 
     cloudflare: {
